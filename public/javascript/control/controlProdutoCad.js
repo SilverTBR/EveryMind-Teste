@@ -20,4 +20,4 @@ async function preencherTabela() {
 
 preencherTabela()
 document.getElementById("inserir").addEventListener("click", () => produtoControllerCad.cadastrar());
-document.getElementById("titulo").addEventListener("click", () => produtoControllerCad.redirecionarParaHome());
+document.getElementById("titulo").addEventListener("click", () => produtoControllerCad.redirecionarHome());

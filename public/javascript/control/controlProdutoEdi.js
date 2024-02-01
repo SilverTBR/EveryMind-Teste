@@ -10,14 +10,14 @@ class ProdutoControllerEdi extends ProdutoController {
       this.getPreco()
     );
     if (resultado.status == true) {
-      this.redirecionarParaHome();
+      this.redirecionarHome();
     }
   };
 
   deletar = async () => {
     let resultado = await service.deletar(produtoId);
     if (resultado.status == true) {
-      this.redirecionarParaHome();
+      this.redirecionarHome();
     }
   };
 }
@@ -37,7 +37,7 @@ preencherTabela();
 
 document
   .getElementById("cancelar")
-  .addEventListener("click", () => produtoControllerEdi.redirecionarParaHome());
+  .addEventListener("click", () => produtoControllerEdi.redirecionarHome());
 document
   .getElementById("editar")
   .addEventListener("click", () => produtoControllerEdi.editar());
@@ -46,4 +46,4 @@ document
   .addEventListener("click", () => produtoControllerEdi.deletar());
 document
   .getElementById("titulo")
-  .addEventListener("click", () => produtoControllerEdi.redirecionarParaHome());
+  .addEventListener("click", () => produtoControllerEdi.redirecionarHome());

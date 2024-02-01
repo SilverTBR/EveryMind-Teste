@@ -32,7 +32,7 @@ class controlProduto {
                 celula.textContent = produto[propriedade];
                 linha.appendChild(celula);
             }
-            linha.addEventListener("click", () => this.redirecionarParaEdicao(produto));
+            linha.addEventListener("click", () => this.redirecionarEdicao(produto));
             this.corpoTabela.appendChild(linha);
         });
     }
